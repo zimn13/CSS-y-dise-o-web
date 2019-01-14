@@ -1,0 +1,140 @@
+#contenido{
+    max-width: 900px;
+    margin: 0px auto;
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+body{
+    font-family: 'Dancing Script'; 
+    background: #02010a;
+    margin: 0px;
+}
+header{
+    background: #5b7989;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+header h1{
+    float: left;
+    text-shadow: 2px 0px #02010a;
+    color: white;
+    padding-left: 2%;
+    font-size: 2em;
+}
+
+#navegacion{
+    float: right; 
+    margin-top: 4%;
+    margin-right: 2%;
+    padding-right: 2%;
+}
+#navegacion a{
+    
+    font-size: 1.3em;
+    padding-left: 40px;
+    color: white;
+}
+
+#navegacion a[href="#"]{
+    text-decoration: none;
+}
+
+img{
+    box-shadow: 0 0 2px #02010a;
+}
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #d5c75f;
+    text-align: center;
+}
+figure{
+    width: 30%;
+    text-align: center;
+    margin: 3% auto ;
+}
+figure img{
+    width: 100%;
+}
+#figure1{
+    filter: blur(10px)
+}
+#figure3{
+    filter: sepia(90%);
+}
+figure:nth-child(even){
+    filter: grayscale(100%);
+}
+
+
+footer{
+    background:  #C6d5c5;
+    display: flex;
+    flex-direction: row; 
+    border-radius: 0px 0px 10px 10px;
+}
+footer div{
+    font-size: 1.2em;
+    width: 25%;
+    margin-left: 5%;
+    padding-bottom: 1%;
+}
+footer div>h2{
+    margin-bottom: 0px;
+}
+footer div>p{
+    margin: 1%;
+}
+@media (max-width:889px)
+{
+    #contenido{
+        width: 95%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4em;
+    }
+    footer div{
+        width: 100%;
+    }
+    
+    header h1{
+        float: none;
+        text-align: center;
+        font-size: 3.2em;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    #navegacion{
+        float: none;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 3%;
+        font-size: 1.2em;
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor figure{
+        width: 90%;
+        margin: 5%;
+        text-align: center;
+    }
+}
+
+@keyframes
+slidein{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
